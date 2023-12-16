@@ -1,0 +1,38 @@
+/* Nav.css */
+
+.navbar {
+    background-color: #111; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 10px;
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Set a higher z-index to ensure it stays on top of other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #de2d8f; /* Change color on hover */
+  }
+  

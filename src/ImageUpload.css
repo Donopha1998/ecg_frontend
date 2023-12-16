@@ -1,0 +1,86 @@
+/* ImageUpload.css */
+
+.image-upload-container {
+    background-color: #111; /* Dark background color */
+    color: #fff; /* Light text color */
+    /* padding: 20px; */
+    border-radius: 10px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .upload-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  .upload-button {
+    background-color: #de2d8f; /* Blue upload button */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-button:hover {
+    background-color: #a11c65; /* Darker blue on hover */
+  }
+
+  .image-preview img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .file-input-label {
+    display: inline-block;
+    background-color: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px dashed #ccc;
+    margin-bottom: 20px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-input-label:hover {
+    background-color: #4d4d4d;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  /* ImageUpload.css */
+
+/* ... Existing styles ... */
+
+.image-preview {
+  width: 200px;
+  padding: 0;
+  height: 200px;
+  margin: 20px 0;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure image doesn't overflow the preview box */
+}
+
+.image-preview img {
+  width: 100%; /* Make the image take up the full width of the preview box */
+  height: auto; /* Maintain the aspect ratio */
+  padding: 0;
+  margin: 0;
+  display: block; /* Prevent extra spacing due to inline-block behavior */
+}
+
+/* ... Remaining styles ... */
