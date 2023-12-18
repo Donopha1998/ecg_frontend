@@ -189,6 +189,7 @@ input[type="submit"]:active {
   margin-bottom: 20px;
 }
 .formcon{
-  width: 1050px;
+  width: 80%;
   margin-bottom: 20px;
+  margin-left: 15%
 }

@@ -100,23 +100,24 @@ export function Form() {
     <div className="formcon">
       <Header />
       <form onSubmit={handleSubmit(onSubmit)}>
-        {keys.map((item) => (
-          <div key={item} className="el">
-            <label className="la" htmlFor={item}>
-              {item}
-            </label>
-            <input
-              key={item}
-              type="text"
-              step="any"
-              {...register(item, {
-                required: true,
-                validate: customNumberValidator,
-              })}
-              placeholder=""
-            />
-          </div>
-        ))}
+      
+          {keys.map((item) => (
+            <div key={item} className="el">
+              <label className="la" htmlFor={item}>
+                {item}
+              </label>
+              <input
+                key={item}
+                type="text"
+                step="any"
+                {...register(item, {
+                  required: true,
+                  validate: customNumberValidator,
+                })}
+                placeholder=""
+              />
+            </div>
+          ))}
 
         {/* output */}
         <p>{data}</p>
@@ -125,7 +126,11 @@ export function Form() {
           <input type="submit" />
         </div>
       </form>
-      <Modal isOpen={modalOpen} onClose={closeModal} responseText={apiResponse} />
+      <Modal
+        isOpen={modalOpen}
+        onClose={closeModal}
+        responseText={apiResponse}
+      />
     </div>
   );
 }
